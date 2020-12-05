@@ -40,7 +40,7 @@ public class ScoreViewer : MonoBehaviour
     public void TextInput()
     {
         Name = inputText.text;
-        score = 100;
+        score = singtonEmtion.mScore;
         if(string.IsNullOrEmpty(Name))
         {
             Debug.Log("Return");

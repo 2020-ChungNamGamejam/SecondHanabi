@@ -44,7 +44,7 @@ public class preFabNodeK : MonoBehaviour
                 if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
                 {
                     //퍼펙트조건
-                    debug.Log("ㅏ퍼펙트");
+;
                     Instantiate(Go[0], Vec, Quaternion.identity);
                     singtonEmtion.GetInstance().setPerfect();
                     singtonEmtion.GetInstance().KkeyTRUE();
@@ -53,7 +53,7 @@ public class preFabNodeK : MonoBehaviour
                 else if ((sw.ElapsedMilliseconds > distance * 1000 - 250 && sw.ElapsedMilliseconds < distance * 1000 - 100) || (sw.ElapsedMilliseconds > distance * 1000 + 100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
                 {
                     //굿
-                    debug.Log("ㅏ굿");
+
                     Instantiate(Go[1], Vec, Quaternion.identity);
                     singtonEmtion.GetInstance().setGrate();
                     singtonEmtion.GetInstance().KkeyTRUE();
@@ -62,7 +62,7 @@ public class preFabNodeK : MonoBehaviour
                 else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
                 {
                     //bad
-                    debug.Log("ㅏ베드");
+
                     Instantiate(Go[2], Vec, Quaternion.identity);
                     singtonEmtion.GetInstance().setBad();
                     singtonEmtion.GetInstance().KkeyTRUE();

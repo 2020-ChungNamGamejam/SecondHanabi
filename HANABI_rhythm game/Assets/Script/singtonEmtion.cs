@@ -49,8 +49,9 @@ public class singtonEmtion : MonoBehaviour
     public bool isEnd = false;
 
     public bool isMiissingHand = false;
-  
 
+    public bool isIdel = true;
+    public bool isRight = true;
 
 
     private singtonEmtion() { }

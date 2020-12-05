@@ -12,7 +12,8 @@ public class ScoreViewer : MonoBehaviour
 {
 
     [SerializeField] private Text[] ranks;
- 
+
+    [SerializeField] private GameObject blackImg;
 
     [SerializeField] private InputField inputText;
     [SerializeField] private Button enterButton;
@@ -24,6 +25,7 @@ public class ScoreViewer : MonoBehaviour
     private void Start()
     {
         inputText.gameObject.SetActive(true);
+        blackImg.SetActive(false);
 
         inputText.onEndEdit.AddListener((s) => { TextInput(); });
 
@@ -72,6 +74,7 @@ public class ScoreViewer : MonoBehaviour
         }
 
         inputText.gameObject.SetActive(false);
+        blackImg.SetActive(true);
         enterButton.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(true);
 

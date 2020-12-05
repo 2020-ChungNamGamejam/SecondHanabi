@@ -24229,7 +24229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 428863239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76389b6402fb974fb2aa8d452b75fb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 15bffc17f82cb83439485f3919704166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Girl: {fileID: 6572293085908116298, guid: 618b6db9c6b73d44cacfdfd4c429cc2e, type: 3}
@@ -24248,6 +24248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   G_RightPrticle: {fileID: 0}
   G_leftPrticle: {fileID: 0}
+  audio: {fileID: 636358441}
 --- !u!1 &432852020
 GameObject:
   m_ObjectHideFlags: 0
@@ -48756,6 +48757,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1668352685}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &905233725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905233724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bffc17f82cb83439485f3919704166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 636358441}
 --- !u!1 &964630130
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ using Spine.Unity;
 
 public class singtonEmtion : MonoBehaviour
 {
+
+    public static int mScore;
+
     public bool isAkey=false;
     public bool isSkey= false;
     public bool isDkey= false;
@@ -207,16 +210,19 @@ public class singtonEmtion : MonoBehaviour
                 switch(mState)
                 {
                     case state.perfect:
+                        mScore += 100;
                         Instantiate(IPerfect, new Vector3(0, 2.5f, 0), Quaternion.identity);
                         Instantiate(ePerfect, new Vector3(0, 2.5f, 0), Quaternion.identity);
                         break;
 
                     case state.grate:
+                        mScore += 75;
                         Instantiate(IGreate, new Vector3(0, 2.5f, 0), Quaternion.identity);
                         Instantiate(eGreate, new Vector3(0, 2.5f, 0), Quaternion.identity);
                         break;
 
                     case state.good:
+                        mScore += 50;
                         Instantiate(IGood, new Vector3(0, 2.5f, 0), Quaternion.identity);
                         Instantiate(eGood, new Vector3(0, 2.5f, 0), Quaternion.identity);
                         break;

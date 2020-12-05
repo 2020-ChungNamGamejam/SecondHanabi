@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: distort_ranking
+  m_Name: distort_ranking 1
   m_Shader: {fileID: 4800000, guid: 4faa8ae894c6bd84ca0533df91b8592f, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 0

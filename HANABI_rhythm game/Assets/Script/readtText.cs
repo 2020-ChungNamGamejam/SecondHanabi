@@ -13,7 +13,11 @@ public class readtText : MonoBehaviour
     List<int> KeyK = new List<int>();
 
     float delaytime = 0.571428571428571f;
-    public GameObject prefabNode;
+    public GameObject prefabNodeA;
+    public GameObject prefabNodeS;
+    public GameObject prefabNodeD;
+    public GameObject prefabNodeJ;
+    public GameObject prefabNodeK;
 
     void Start()
     {
@@ -76,7 +80,7 @@ public class readtText : MonoBehaviour
                 break;
 
             if (KeyA[count] == 1)
-                Instantiate(prefabNode, new Vector3(-3, -5, 0), Quaternion.identity);
+                Instantiate(prefabNodeA, new Vector3(-3, -5, 0), Quaternion.identity);
 
 
 
@@ -101,7 +105,7 @@ public class readtText : MonoBehaviour
                 break;
 
             if (KeyS[count] == 1)
-                Instantiate(prefabNode, new Vector3(-1, -5, 0), Quaternion.identity);
+                Instantiate(prefabNodeS, new Vector3(-1, -5, 0), Quaternion.identity);
 
 
 
@@ -126,7 +130,7 @@ public class readtText : MonoBehaviour
                 break;
 
             if (KeyD[count] == 1)
-                Instantiate(prefabNode, new Vector3(1, -5, 0), Quaternion.identity);
+                Instantiate(prefabNodeD, new Vector3(1, -5, 0), Quaternion.identity);
 
 
 
@@ -151,7 +155,7 @@ public class readtText : MonoBehaviour
                 break;
 
             if (KeyJ[count] == 1)
-                Instantiate(prefabNode, new Vector3(3, -5, 0), Quaternion.identity);
+                Instantiate(prefabNodeJ, new Vector3(3, -5, 0), Quaternion.identity);
 
 
 
@@ -176,7 +180,7 @@ public class readtText : MonoBehaviour
                 break;
 
             if (KeyK[count] == 1)
-                Instantiate(prefabNode, new Vector3(5, -5, 0), Quaternion.identity);
+                Instantiate(prefabNodeK, new Vector3(5, -5, 0), Quaternion.identity);
 
 
 

@@ -44,52 +44,35 @@ public class preFabNodeA : MonoBehaviour
         {
 
             
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.D))
             {
-               
-                
                 if (sw.ElapsedMilliseconds > distance*1000-100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
                 {
-
                     //퍼펙트조건
                     Instantiate(Go[0], Vec, Quaternion.identity);
                     singtonEmtion.GetInstance().setPerfect();
                     singtonEmtion.GetInstance().AkeyTRUE();
                     Destroy(gameObject);
-                
-
                 }
-               else if ((sw.ElapsedMilliseconds > distance*1000-250 && sw.ElapsedMilliseconds < distance * 1000 - 100) ||(sw.ElapsedMilliseconds > distance * 1000 +100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
+                else if ((sw.ElapsedMilliseconds > distance*1000-250 && sw.ElapsedMilliseconds < distance * 1000 - 100) ||(sw.ElapsedMilliseconds > distance * 1000 +100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
                 {
-
                     //굿
                     Instantiate(Go[1], Vec, Quaternion.identity);
                     singtonEmtion.GetInstance().setGrate();
                     singtonEmtion.GetInstance().AkeyTRUE();
                     Destroy(gameObject);
-
-
                 }
-
                 else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
                 {
-
                     //bad
                     Instantiate(Go[2], Vec, Quaternion.identity);
                     singtonEmtion.GetInstance().setBad();
                     singtonEmtion.GetInstance().AkeyTRUE();
                     Destroy(gameObject);
-
-
                 }
-
-
-
                 singtonEmtion.GetInstance().downTRUE();
             }
-
             yield return null;
-
         }
         yield return null;
     }

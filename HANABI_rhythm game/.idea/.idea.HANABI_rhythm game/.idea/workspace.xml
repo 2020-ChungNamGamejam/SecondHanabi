@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a39adbfe-4cff-422e-ba4a-9419923a4c3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_res.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_res.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/singtonEmtion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/singtonEmtion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IngameSetCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IngameSetCharacter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IngameSetCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/singtonEmtion.cs" />
       </list>
     </option>
   </component>
@@ -62,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607177470914</updated>
-      <workItem from="1607177480194" duration="1616000" />
+      <workItem from="1607177480194" duration="4633000" />
     </task>
     <servers />
   </component>

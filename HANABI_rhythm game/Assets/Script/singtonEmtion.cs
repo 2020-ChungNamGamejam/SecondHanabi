@@ -135,6 +135,7 @@ public class singtonEmtion : MonoBehaviour
 
 
     public SkeletonAnimation skill;
+    public GameObject girl, boy;
     private string cur_animation = "";
     public enum animState
     {
@@ -160,7 +161,20 @@ public class singtonEmtion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (GameManager.FemaleCharactorSelect)
+        {
+            girl.SetActive(true);
+            skill = girl.GetComponent<SkeletonAnimation>();
+        }
+        else if (GameManager.MaleCharactorSelect)
+        {
+            boy.SetActive(true);
+            skill = boy.GetComponent<SkeletonAnimation>();
+        }
+        else
+        {
+            Debug.Log("남녀 둘 다 선택되지 않은 예외");
+        }
     }
 
     // Update is called once per frame

@@ -5,29 +5,31 @@ using UnityEngine;
 
 public class IngameSetCharacter : MonoBehaviour
 {
-    public int n { get; set; }
+    public SkeletonAnimation Girl;
+    public SkeletonAnimation Boy;
+    
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Char start");
+        
         var skeleton = GetComponent<SkeletonAnimation>();
-        var skeleton2 = GetComponent<SkeletonAnimation>();
+
+        
+
+        /*
         if (GameManager.FemaleCharactorSelect)
         {
-            
+            skeleton = Girl;
         }
         else if (GameManager.MaleCharactorSelect)
         {
-            
+            skeleton = Boy;
         }
         else
         {
             Debug.Log("fucking bug");
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        */
     }
 }

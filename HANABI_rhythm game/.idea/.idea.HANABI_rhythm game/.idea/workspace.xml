@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a39adbfe-4cff-422e-ba4a-9419923a4c3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeA.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeD.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeJ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeJ.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeK.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607177470914</updated>
-      <workItem from="1607177480194" duration="5704000" />
+      <workItem from="1607177480194" duration="6473000" />
     </task>
     <servers />
   </component>

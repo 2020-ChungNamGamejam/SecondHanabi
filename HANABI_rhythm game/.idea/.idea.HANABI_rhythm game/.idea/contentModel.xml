@@ -24,9 +24,9 @@
           <e p="particle.cs" t="Include" />
           <e p="prefabDestroy.cs" t="Include" />
           <e p="preFabNode" t="Include">
+            <e p="preFabNobeJ.cs" t="Include" />
             <e p="preFabNodeA.cs" t="Include" />
             <e p="preFabNodeD.cs" t="Include" />
-            <e p="preFabNodeJ.cs" t="Include" />
             <e p="preFabNodeK.cs" t="Include" />
             <e p="prefabNodeMove.cs" t="Include" />
             <e p="preFabNodeS.cs" t="Include" />
@@ -42,6 +42,7 @@
           <e p="GameManager.cs" t="Include" />
           <e p="IngameSetCharacter.cs" t="Include" />
           <e p="Opening.cs" t="Include" />
+          <e p="ScoreViewer.cs" t="Include" />
         </e>
         <e p="Shader" t="Include">
           <e p="SpriteDistort.shader" t="Include" />

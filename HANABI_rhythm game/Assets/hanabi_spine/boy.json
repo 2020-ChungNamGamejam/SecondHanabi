@@ -1,6 +1,6 @@
 {
 "skeleton": {
-	"hash": "8rKP8vG+eLVmm1QSOgjuT0cXt90",
+	"hash": "jL+LkM8Pa3XYGwkOXw3UZf173BA",
 	"spine": "3.8.90",
 	"x": -46.63,
 	"y": -21.42,
@@ -252,20 +252,28 @@
 			},
 			"head": {
 				"rotate": [
-					{ "angle": 2.54 }
+					{ "angle": 13.7 }
 				],
 				"translate": [
-					{ "x": -0.08, "y": -1.48 }
+					{ "x": -2.12, "y": 6.17 }
 				]
 			},
 			"arm_l_2": {
 				"rotate": [
-					{ "angle": 6.96 }
+					{ "angle": -9.89 }
 				]
 			},
 			"arm_l_1": {
 				"rotate": [
-					{ "angle": 3.6 }
+					{ "angle": 3.48 }
+				]
+			},
+			"spine1": {
+				"rotate": [
+					{ "angle": -14.92 }
+				],
+				"translate": [
+					{ "x": 8.64, "y": 2.88 }
 				]
 			}
 		}
@@ -274,23 +282,23 @@
 		"bones": {
 			"head": {
 				"rotate": [
-					{ "angle": -3.35 }
+					{ "angle": -33.49 }
 				],
 				"translate": [
-					{ "x": 2.45, "y": -2.61 }
+					{ "x": -1.93, "y": -14.79 }
 				]
 			},
 			"spine1": {
 				"rotate": [
-					{ "angle": -7.15 }
+					{ "angle": 30.47 }
 				]
 			},
 			"arm_l_1": {
 				"rotate": [
-					{ "angle": -72.63 }
+					{ "angle": -108.88 }
 				],
 				"translate": [
-					{ "x": 8.4, "y": -4.38 }
+					{ "x": 16.62, "y": -1.28 }
 				]
 			},
 			"arm_l_2": {
@@ -300,12 +308,30 @@
 			},
 			"arm_r_2": {
 				"rotate": [
-					{ "angle": -5.75 }
+					{ "angle": -63.95 }
 				]
 			},
 			"arm_r_1": {
 				"rotate": [
 					{ "angle": 7.71 }
+				]
+			},
+			"leg1": {
+				"rotate": [
+					{ "angle": -6.86 }
+				]
+			},
+			"leg2": {
+				"rotate": [
+					{ "angle": 4.36 }
+				]
+			},
+			"gun_r": {
+				"translate": [
+					{ "x": -3.62, "y": -4.22 }
+				],
+				"scale": [
+					{ "y": -1 }
 				]
 			}
 		}

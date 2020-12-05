@@ -16,7 +16,7 @@ public class preFabNodeD : MonoBehaviour
     {
         sw.Start();
         StartCoroutine(Dkey());
-        Vec = new Vector3(1, 0, 0);
+        Vec = new Vector3(-3, 0, 0);
     }
 
     // Update is called once per frame
@@ -34,12 +34,17 @@ public class preFabNodeD : MonoBehaviour
     IEnumerator Dkey()
     {
         Stopwatch sw = new Stopwatch(); // 스탑워치 돌리기
-        sw.Start();                     //종료조건못찾음...
+        sw.Start();                             //종료조건못찾음...
 
         while (true)
         {
+
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                singtonEmtion.GetInstance().modleCount++;
+
+
                 if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
                 {
                     //퍼펙트조건
@@ -56,7 +61,6 @@ public class preFabNodeD : MonoBehaviour
                     singtonEmtion.GetInstance().DkeyTRUE();
                     Destroy(gameObject);
                 }
-
                 else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
                 {
                     //bad
@@ -65,6 +69,7 @@ public class preFabNodeD : MonoBehaviour
                     singtonEmtion.GetInstance().DkeyTRUE();
                     Destroy(gameObject);
                 }
+                singtonEmtion.GetInstance().downTRUE();
             }
             yield return null;
         }

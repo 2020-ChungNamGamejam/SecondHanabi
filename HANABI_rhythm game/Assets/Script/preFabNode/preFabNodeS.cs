@@ -41,6 +41,8 @@ public class preFabNodeS : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                singtonEmtion.GetInstance().modleCount++;
+
                 if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
                 {
                     //퍼펙트조건

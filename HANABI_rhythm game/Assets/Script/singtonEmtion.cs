@@ -18,11 +18,26 @@ public class singtonEmtion : MonoBehaviour
     public bool isKkey= false;
     int combe = 0;
 
-   
+    public int modleCount = 0;
 
+    public int missCount = 0;
 
+    public void girl_idel()
+    {
+        this.SetAnimation("idle", true, 0.01f);
+    }
+    public void girl_shot_r()
+    {
+        this.SetAnimation("shot_r", true, 0.01f);
+    }
+    public void girl_shot_l()
+    {
+        this.SetAnimation("shot_l", true, 0.01f);
+    }
 
+    public int life = 6;
 
+    public bool loseLife = false;
 
     enum state
     {
@@ -50,8 +65,7 @@ public class singtonEmtion : MonoBehaviour
 
     public bool isMiissingHand = false;
 
-    public bool isIdel = true;
-    public bool isRight = true;
+
 
 
     private singtonEmtion() { }
@@ -138,25 +152,13 @@ public class singtonEmtion : MonoBehaviour
     public SkeletonAnimation skill;
     public GameObject girl, boy;
     private string cur_animation = "";
-    public enum animState
-    {
-        idel, shot_l, shot_r
+  
 
-
-    }
-
-    private animState _animState;//처리
     private string CurrentAnimation;//재생
 
-    public void LeftShot()
-    {
-        SetAnimation("shot_l", true, 1.0f);
-    }
 
-    public void r()
-    {
-        SetAnimation("shot_l", true, 1.0f);
-    }
+
+  
 
 
     // Start is called before the first frame update
@@ -181,12 +183,16 @@ public class singtonEmtion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(combe==0)
-            SetAnimation("idle", true, 0.01f);
+
+      
+   
+
+
 
 
         if (isMiissingHand)
         {
+            loseLife = true;
             Instantiate(Imiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
             Instantiate(emiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
             isMiissingHand = false;
@@ -201,6 +207,7 @@ public class singtonEmtion : MonoBehaviour
             {
                 //실패했을경우
                 combe = 0; //콤보 초기화
+                loseLife = true;
                 mState = state.miss;
                 isDown = false;
                 Instantiate(Imiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
@@ -212,14 +219,6 @@ public class singtonEmtion : MonoBehaviour
             else
             {
                 combe++; //콤보 증가
-               if(combe%2==0)
-                {
-                    SetAnimation("shot_l", true, 0.01f);
-                }
-               if(combe%2==1)
-                {
-                    SetAnimation("shot_r", true, 0.01f);
-                }
                 isDown = false;
                 Debug.Log(mState);
                 switch(mState)
@@ -248,6 +247,8 @@ public class singtonEmtion : MonoBehaviour
 
         }
     }
+   
+     
     void SetAnimation(string name, bool loop, float speed)
     {
         if (name == cur_animation)

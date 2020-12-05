@@ -21,7 +21,8 @@ public class readtText : MonoBehaviour
 
     void Start()
     {
-        string path = @"C:/Users/82108/WorkSpace/SecondHanabi/HANABI_rhythm game/Assets/text/sampleExample.txt";
+        // string path = @"C:/Users/82108/WorkSpace/SecondHanabi/HANABI_rhythm game/Assets/text/sampleExample.txt";
+        string path = Application.dataPath + @"\sampleExample.txt";
         string[] textValue = System.IO.File.ReadAllLines(path);
 
         if (textValue.Length > 0)

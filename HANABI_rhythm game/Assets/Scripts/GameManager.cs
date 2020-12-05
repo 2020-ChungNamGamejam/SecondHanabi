@@ -5,15 +5,22 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+    
     public GameObject IntroCanvas;
     public GameObject CharctorSelectCanvas;
     public Image coverIMG;
 
-    public bool MaleCharactorSelect = false;
-    public bool FemaleCharactorSelect = false;
+    public static bool MaleCharactorSelect = false;
+    public static bool FemaleCharactorSelect = false;
 
     void Start()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        
         Color color = coverIMG.color;
         color.a = 0f;
         coverIMG.color = color;

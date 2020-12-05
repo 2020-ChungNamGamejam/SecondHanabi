@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class CharSelect : MonoBehaviour
 {
@@ -46,7 +47,7 @@ public class CharSelect : MonoBehaviour
     public void OnMouseEnter()
     {
         GameManager gameManagerLogic = gameManager.GetComponent<GameManager>();
-        if (!gameManagerLogic.FemaleCharactorSelect && !gameManagerLogic.MaleCharactorSelect)
+        if (!GameManager.FemaleCharactorSelect && !GameManager.MaleCharactorSelect)
         {
             ObjName = gameObject.name;
             AudioOn();
@@ -57,7 +58,7 @@ public class CharSelect : MonoBehaviour
     public void OnMouseExit()
     {
         GameManager gameManagerLogic = gameManager.GetComponent<GameManager>();
-        if (!gameManagerLogic.MaleCharactorSelect && !gameManagerLogic.FemaleCharactorSelect)
+        if (!GameManager.MaleCharactorSelect && !GameManager.FemaleCharactorSelect)
         {
             ObjName = gameObject.name;
             AudioOff();
@@ -95,15 +96,15 @@ public class CharSelect : MonoBehaviour
     {
 
         GameManager gameManagerLogic = gameManager.GetComponent<GameManager>();
-        if (!gameManagerLogic.FemaleCharactorSelect && !gameManagerLogic.MaleCharactorSelect)
+        if (!GameManager.FemaleCharactorSelect && !GameManager.MaleCharactorSelect)
         {
             if(gameObject.name == "Male")
             {
-                gameManagerLogic.MaleCharactorSelect = true;
+                GameManager.MaleCharactorSelect = true;
             }
             else
             {
-                gameManagerLogic.FemaleCharactorSelect = true;
+                GameManager.FemaleCharactorSelect = true;
             }
             
             TheAudio.Stop();
@@ -133,6 +134,7 @@ public class CharSelect : MonoBehaviour
 
         TheAudio.Stop();
         GameObject.FindObjectOfType<BGM_Play>().StopBGM();
+        SceneManager.LoadScene("2_res");
         // 메임 게임 scene 전환 시점
     }
 }

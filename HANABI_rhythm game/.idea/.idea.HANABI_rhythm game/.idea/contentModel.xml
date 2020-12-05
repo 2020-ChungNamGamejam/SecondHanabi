@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\82108\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\82108\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HANABI_rhythm game.-1959370172.00" t="ExcludeRecursive" />
+    <e p="C:\Users\82108\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HANABI_rhythm game.-1717199048.00" t="ExcludeRecursive" />
     <e p="C:\Users\82108\AppData\Roaming\JetBrains\Rider2020.2\consoles\ide" t="IncludeRecursive" />
-    <e p="C:\Users\82108\WorkSpace\Hanabi\HANABI_rhythm game" t="IncludeRecursive">
+    <e p="C:\Users\82108\WorkSpace\SecondHanabi\HANABI_rhythm game" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Extra" t="Include">
+          <e p="Hit &amp; Slashes Vol.1" t="Include">
+            <e p="SelfDestruct.cs" t="Include" />
+          </e>
+        </e>
         <e p="hanabi_spine" t="Include">
           <e p="boy.atlas.txt" t="Include" />
           <e p="girl.atlas.txt" t="Include" />
@@ -27,6 +32,7 @@
             <e p="preFabNodeS.cs" t="Include" />
           </e>
           <e p="readtText.cs" t="Include" />
+          <e p="singletonEffectScocer.cs" t="Include" />
           <e p="singtonEmtion.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">

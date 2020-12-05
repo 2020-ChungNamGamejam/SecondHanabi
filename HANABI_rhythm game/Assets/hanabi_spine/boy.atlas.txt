@@ -1,0 +1,41 @@
+
+boy.png
+size: 330,179
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gun
+  rotate: true
+  xy: 154, 132
+  size: 45, 51
+  orig: 45, 51
+  offset: 0, 0
+  index: -1
+male_arm_l
+  rotate: true
+  xy: 2, 101
+  size: 45, 145
+  orig: 45, 145
+  offset: 0, 0
+  index: -1
+male_arm_r
+  rotate: true
+  xy: 2, 148
+  size: 29, 150
+  orig: 29, 150
+  offset: 0, 0
+  index: -1
+male_body
+  rotate: true
+  xy: 2, 2
+  size: 93, 326
+  orig: 118, 455
+  offset: 2, 2
+  index: -1
+male_head
+  rotate: false
+  xy: 207, 97
+  size: 101, 80
+  orig: 118, 455
+  offset: 2, 323
+  index: -1

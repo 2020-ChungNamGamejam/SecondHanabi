@@ -1,0 +1,41 @@
+
+girl.png
+size: 227,265
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+female_arm_l
+  rotate: false
+  xy: 190, 14
+  size: 27, 97
+  orig: 27, 97
+  offset: 0, 0
+  index: -1
+female_arm_r
+  rotate: true
+  xy: 76, 73
+  size: 38, 112
+  orig: 38, 112
+  offset: 0, 0
+  index: -1
+female_body
+  rotate: false
+  xy: 2, 2
+  size: 72, 261
+  orig: 330, 395
+  offset: 234, 4
+  index: -1
+female_head
+  rotate: false
+  xy: 76, 113
+  size: 149, 150
+  orig: 330, 395
+  offset: 180, 191
+  index: -1
+gun
+  rotate: true
+  xy: 76, 26
+  size: 45, 51
+  orig: 45, 51
+  offset: 0, 0
+  index: -1

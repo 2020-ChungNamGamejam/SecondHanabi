@@ -19,7 +19,10 @@
         <e p="sampleExample.txt" t="Include" />
         <e p="Script" t="Include">
           <e p="effectOn.cs" t="Include" />
+          <e p="GrilAnimation.cs" t="Include" />
+          <e p="Life.cs" t="Include" />
           <e p="mCamera.cs" t="Include" />
+          <e p="mScore.cs" t="Include" />
           <e p="Node.cs" t="Include" />
           <e p="particle.cs" t="Include" />
           <e p="prefabDestroy.cs" t="Include" />

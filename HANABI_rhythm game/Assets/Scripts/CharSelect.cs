@@ -26,9 +26,8 @@ public class CharSelect : MonoBehaviour
 
     string ObjName;
 
-    private void Awake()
+    private void Start()
     {
-
         coverIMG.SetActive(false);
         TheAudio = GetComponent<AudioSource>();
 
@@ -84,7 +83,7 @@ public class CharSelect : MonoBehaviour
     {
         GameManager gameManagerLogic = gameManager.GetComponent<GameManager>();
         if(gameManagerLogic)
-        TheAudio.clip = clip[0];
+            TheAudio.clip = clip[0];
         TheAudio.Play();
     }
     void AudioOff()

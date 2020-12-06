@@ -78,7 +78,7 @@ public class ScoreViewer : MonoBehaviour
         enterButton.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(true);
 
-        exitButton.onClick.AddListener(() => { SceneManager.LoadSceneAsync("Title");  });
+        exitButton.onClick.AddListener(() => { Application.Quit(); });
 
         for (int i = 0; i < printUsers.Users.Count && i < 5; i++)
         {

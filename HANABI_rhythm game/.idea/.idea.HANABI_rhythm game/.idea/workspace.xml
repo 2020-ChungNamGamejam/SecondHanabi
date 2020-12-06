@@ -22,9 +22,11 @@
     <list default="true" id="a39adbfe-4cff-422e-ba4a-9419923a4c3d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/End.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IngameSetCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IngameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IngameSetCharacter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_res.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_res.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/readtText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/readtText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreViewer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreViewer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/singtonEmtion.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeA.cs" />
@@ -48,9 +49,11 @@
         <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeD.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeJ.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeK.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/readtText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IngameSetCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IngameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/readtText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreViewer.cs" />
       </list>
     </option>
   </component>

@@ -9,6 +9,7 @@ public class preFabNodeA : MonoBehaviour
 {
     float distance = 5f;
     Stopwatch sw = new Stopwatch();
+    bool AKeyOn = false;
   
     Vector3 Vec;
     public GameObject[] Go = new GameObject[4];
@@ -44,37 +45,54 @@ public class preFabNodeA : MonoBehaviour
         {
 
             
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D) )
             {
+              
+                singtonEmtion.GetInstance().ONKey = false;
+
                 singtonEmtion.GetInstance().modleCount++;
+               
 
+                    if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
+                    {
+                        //퍼펙트조건
+                        Instantiate(Go[0], Vec, Quaternion.identity);
+                        singtonEmtion.GetInstance().setPerfect();
+                        singtonEmtion.GetInstance().AkeyTRUE();
+                        Destroy(gameObject);
+                    }
+                    else if ((sw.ElapsedMilliseconds > distance * 1000 - 250 && sw.ElapsedMilliseconds < distance * 1000 - 100) || (sw.ElapsedMilliseconds > distance * 1000 + 100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
+                    {
+                        //굿
+                        Instantiate(Go[1], Vec, Quaternion.identity);
+                        singtonEmtion.GetInstance().setGrate();
+                        singtonEmtion.GetInstance().AkeyTRUE();
+                        Destroy(gameObject);
+                    }
+                    else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
+                    {
+                        //bad
+                        Instantiate(Go[2], Vec, Quaternion.identity);
+                        singtonEmtion.GetInstance().setBad();
+                        singtonEmtion.GetInstance().AkeyTRUE();
+                        Destroy(gameObject);
+                    }
+                    singtonEmtion.GetInstance().downTRUE();
+                    if (Input.anyKeyDown)
+                    {
+                        singtonEmtion.GetInstance().ONKey = true;
+                    }
+                    singtonEmtion.GetInstance().ONKey = true;
+         
+                if (Input.anyKey)
+                {
+                    yield break;
+                }
 
-                if (sw.ElapsedMilliseconds > distance*1000-100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
-                {
-                    //퍼펙트조건
-                    Instantiate(Go[0], Vec, Quaternion.identity);
-                    singtonEmtion.GetInstance().setPerfect();
-                    singtonEmtion.GetInstance().AkeyTRUE();
-                    Destroy(gameObject);
-                }
-                else if ((sw.ElapsedMilliseconds > distance*1000-250 && sw.ElapsedMilliseconds < distance * 1000 - 100) ||(sw.ElapsedMilliseconds > distance * 1000 +100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
-                {
-                    //굿
-                    Instantiate(Go[1], Vec, Quaternion.identity);
-                    singtonEmtion.GetInstance().setGrate();
-                    singtonEmtion.GetInstance().AkeyTRUE();
-                    Destroy(gameObject);
-                }
-                else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
-                {
-                    //bad
-                    Instantiate(Go[2], Vec, Quaternion.identity);
-                    singtonEmtion.GetInstance().setBad();
-                    singtonEmtion.GetInstance().AkeyTRUE();
-                    Destroy(gameObject);
-                }
-                singtonEmtion.GetInstance().downTRUE();
             }
+            
+               
+
             yield return null;
         }
         yield return null;

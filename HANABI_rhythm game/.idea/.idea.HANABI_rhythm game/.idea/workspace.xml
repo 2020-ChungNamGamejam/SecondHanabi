@@ -20,13 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a39adbfe-4cff-422e-ba4a-9419923a4c3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Image/buildIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Image/buildIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Post.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Post/post.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Post/post.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HANABI_rhythm game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/2_res.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2_res.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/End.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/End.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Title 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Title 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Title.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNobeJ.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNobeJ.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeA.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeD.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeD.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeK.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/readtText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/readtText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreViewer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreViewer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +56,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/singtonEmtion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeA.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeS.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeD.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeJ.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeK.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IngameSetCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IngameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/readtText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharSelect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreViewer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/readtText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeD.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNobeJ.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeA.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/preFabNode/preFabNodeK.cs" />
       </list>
     </option>
   </component>

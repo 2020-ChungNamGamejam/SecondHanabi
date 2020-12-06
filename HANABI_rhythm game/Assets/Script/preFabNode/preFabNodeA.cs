@@ -47,9 +47,6 @@ public class preFabNodeA : MonoBehaviour
             
             if (Input.GetKeyDown(KeyCode.D) )
             {
-              
-            
-
                 singtonEmtion.GetInstance().modleCount++;
                
 
@@ -78,9 +75,7 @@ public class preFabNodeA : MonoBehaviour
                         Destroy(gameObject);
                     }
                     singtonEmtion.GetInstance().downTRUE();
-                 
-         
-                if (Input.anyKey|| !Input.GetKeyDown(KeyCode.D))
+                    if (Input.anyKey|| !Input.GetKeyDown(KeyCode.D))
                 {
                     yield break;
                 }

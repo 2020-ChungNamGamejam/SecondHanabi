@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        MaleCharactorSelect = false;
+        FemaleCharactorSelect = false;
+
         if (Instance == null)
         {
             Instance = this;

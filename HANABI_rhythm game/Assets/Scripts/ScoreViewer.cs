@@ -42,7 +42,9 @@ public class ScoreViewer : MonoBehaviour
     public void TextInput()
     {
         Name = inputText.text;
-        score = singtonEmtion.mScore;
+        
+        score = singtonEmtion.mScore > 21500 ? 0 : singtonEmtion.mScore;
+        
         if(string.IsNullOrEmpty(Name))
         {
             Debug.Log("Return");
@@ -78,7 +80,7 @@ public class ScoreViewer : MonoBehaviour
         enterButton.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(true);
 
-        exitButton.onClick.AddListener(() => { Application.Quit(); });
+        exitButton.onClick.AddListener(() => { SceneManager.LoadScene("Title"); });
 
         for (int i = 0; i < printUsers.Users.Count && i < 5; i++)
         {

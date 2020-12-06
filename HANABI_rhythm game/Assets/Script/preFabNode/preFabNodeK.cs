@@ -42,8 +42,6 @@ public class preFabNodeK : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.K) )
             {
-        
-
                 singtonEmtion.GetInstance().modleCount++;
                
                     if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
@@ -74,7 +72,6 @@ public class preFabNodeK : MonoBehaviour
                         Destroy(gameObject);
                     }
                     singtonEmtion.GetInstance().downTRUE();
-                  
                     if (Input.anyKey||! Input.GetKeyDown(KeyCode.K))
                     {
                         yield break;

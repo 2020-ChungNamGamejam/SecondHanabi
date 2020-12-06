@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Life : MonoBehaviour
 {
     public GameObject[] mLife = new GameObject[6];
+    public int realLife = 0;
+    public int realhart = 6;
 
 
 
@@ -13,24 +15,33 @@ public class Life : MonoBehaviour
     void Start()
     {
         
+       
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(realLife);
+       
+
 
 
         if (singtonEmtion.GetInstance().loseLife == true)
         {
+            realLife = singtonEmtion.GetInstance().life / 5;
 
             if (singtonEmtion.GetInstance().life < 1)
                 SceneManager.LoadScene("End");
-           if(singtonEmtion.GetInstance().life<=6&& singtonEmtion.GetInstance().life>0)
+           if(singtonEmtion.GetInstance().life<=30&& singtonEmtion.GetInstance().life>0)
             {
-                Debug.Log(singtonEmtion.GetInstance().life - 1);
 
-                Destroy(mLife[singtonEmtion.GetInstance().life-1]);
-                singtonEmtion.GetInstance().life--;
+               
+
+                if (realLife != realhart)
+                {
+                    Destroy(mLife[(singtonEmtion.GetInstance().life / 5) ]);
+                    realhart = realLife;
+                }
             }
         }
         

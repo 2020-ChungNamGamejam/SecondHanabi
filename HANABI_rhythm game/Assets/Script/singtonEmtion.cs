@@ -24,18 +24,19 @@ public class singtonEmtion : MonoBehaviour
 
     public void girl_idel()
     {
-        this.SetAnimation("idle", true, 0.01f);
+        this.SetAnimation("idle", true, 0);
     }
     public void girl_shot_r()
     {
-        this.SetAnimation("shot_r", true, 0.01f);
+        this.SetAnimation("shot_r", true, 0);
+
     }
     public void girl_shot_l()
     {
-        this.SetAnimation("shot_l", true, 0.01f);
+        this.SetAnimation("shot_l", true, 0);
     }
 
-    public int life = 6;
+    public int life = 30;
 
     public bool loseLife = false;
 
@@ -193,6 +194,7 @@ public class singtonEmtion : MonoBehaviour
         if (isMiissingHand)
         {
             loseLife = true;
+            life -= 5;
             Instantiate(Imiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
             Instantiate(emiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
             isMiissingHand = false;
@@ -207,9 +209,10 @@ public class singtonEmtion : MonoBehaviour
             {
                 //실패했을경우
                 combe = 0; //콤보 초기화
-                loseLife = true;
+                life -= 1;
                 mState = state.miss;
                 isDown = false;
+                loseLife = true;
                 Instantiate(Imiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
                 Instantiate(emiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
 

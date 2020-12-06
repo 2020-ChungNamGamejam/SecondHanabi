@@ -74,7 +74,7 @@ public class preFabNodeS : MonoBehaviour
                     singtonEmtion.GetInstance().downTRUE();
 
 
-                if (Input.anyKey)
+                if (Input.anyKey|| !Input.GetKeyDown(KeyCode.F))
                 {
                     yield break;
                 }

@@ -44,45 +44,41 @@ public class preFabNobeJ : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
-              
-                singtonEmtion.GetInstance().ONKey = false;
+
+
 
                 singtonEmtion.GetInstance().modleCount++;
-                
-                    if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
-                    {
-                        //퍼펙트조건
-                        ;
-                        Instantiate(Go[0], Vec, Quaternion.identity);
-                        singtonEmtion.GetInstance().setPerfect();
-                        singtonEmtion.GetInstance().JkeyTRUE();
-                        Destroy(gameObject);
-                    }
-                    else if ((sw.ElapsedMilliseconds > distance * 1000 - 250 && sw.ElapsedMilliseconds < distance * 1000 - 100) || (sw.ElapsedMilliseconds > distance * 1000 + 100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
-                    {
-                        //굿
 
-                        Instantiate(Go[1], Vec, Quaternion.identity);
-                        singtonEmtion.GetInstance().setGrate();
-                        singtonEmtion.GetInstance().JkeyTRUE();
-                        Destroy(gameObject);
-                    }
-                    else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
-                    {
-                        //bad
+                if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
+                {
+                    //퍼펙트조건
+                    ;
+                    Instantiate(Go[0], Vec, Quaternion.identity);
+                    singtonEmtion.GetInstance().setPerfect();
+                    singtonEmtion.GetInstance().JkeyTRUE();
+                    Destroy(gameObject);
+                }
+                else if ((sw.ElapsedMilliseconds > distance * 1000 - 250 && sw.ElapsedMilliseconds < distance * 1000 - 100) || (sw.ElapsedMilliseconds > distance * 1000 + 100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
+                {
+                    //굿
 
-                        Instantiate(Go[2], Vec, Quaternion.identity);
-                        singtonEmtion.GetInstance().setBad();
-                        singtonEmtion.GetInstance().JkeyTRUE();
-                        Destroy(gameObject);
-                    }
-                    singtonEmtion.GetInstance().downTRUE();
-                    if (Input.anyKeyDown)
-                    {
-                        singtonEmtion.GetInstance().ONKey = true;
-                    }
-                    singtonEmtion.GetInstance().ONKey = true;
-                if (Input.anyKey)
+                    Instantiate(Go[1], Vec, Quaternion.identity);
+                    singtonEmtion.GetInstance().setGrate();
+                    singtonEmtion.GetInstance().JkeyTRUE();
+                    Destroy(gameObject);
+                }
+                else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
+                {
+                    //bad
+
+                    Instantiate(Go[2], Vec, Quaternion.identity);
+                    singtonEmtion.GetInstance().setBad();
+                    singtonEmtion.GetInstance().JkeyTRUE();
+                    Destroy(gameObject);
+                }
+                singtonEmtion.GetInstance().downTRUE();
+
+                if (Input.anyKey|| !Input.GetKeyDown(KeyCode.J))
                 {
                     yield break;
                 }

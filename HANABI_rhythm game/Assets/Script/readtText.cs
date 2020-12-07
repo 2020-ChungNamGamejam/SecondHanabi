@@ -21,9 +21,11 @@ public class readtText : MonoBehaviour
 
     void Start()
     {
-         string path = @"D:\Hanabi\Rhythm_Chart.txt";
-        //string path = Application.dataPath + @"\sampleExample.txt";
-        string[] textValue = System.IO.File.ReadAllLines(path);
+        //    string path = @"D:\Hanabi\Rhythm_Chart.txt";
+        // string path = Application.dataPath + @"\sampleExample.txt";
+      
+        string path = Application.dataPath + "/Resources/sampleExample.txt";
+       string[] textValue = System.IO.File.ReadAllLines(path);
 
         if (textValue.Length > 0)
         {

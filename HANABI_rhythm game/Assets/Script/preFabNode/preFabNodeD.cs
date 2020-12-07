@@ -8,7 +8,9 @@ public class preFabNodeD : MonoBehaviour
 {
     float distance = 5f;
     Stopwatch sw = new Stopwatch();
-    bool DKeyOn = true;
+
+
+
 
     Vector3 Vec;
     public GameObject[] Go = new GameObject[4];
@@ -18,6 +20,7 @@ public class preFabNodeD : MonoBehaviour
         sw.Start();
         StartCoroutine(Dkey());
         Vec = new Vector3(-3, 0, 0);
+        
     }
 
     // Update is called once per frame
@@ -41,17 +44,19 @@ public class preFabNodeD : MonoBehaviour
         {
 
 
-            if (Input.GetKeyDown(KeyCode.Space) )
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                singtonEmtion.GetInstance().modleCount++;
-                
+     
+         
 
+                
                     if (sw.ElapsedMilliseconds > distance * 1000 - 100 && sw.ElapsedMilliseconds < distance * 1000 + 100)
                     {
                         //퍼펙트조건
                         Instantiate(Go[0], Vec, Quaternion.identity);
                         singtonEmtion.GetInstance().setPerfect();
                         singtonEmtion.GetInstance().DkeyTRUE();
+                        singtonEmtion.GetInstance().isDownReal();
                         Destroy(gameObject);
                     }
                     else if ((sw.ElapsedMilliseconds > distance * 1000 - 250 && sw.ElapsedMilliseconds < distance * 1000 - 100) || (sw.ElapsedMilliseconds > distance * 1000 + 100 && sw.ElapsedMilliseconds < distance * 1000 + 250))
@@ -60,6 +65,7 @@ public class preFabNodeD : MonoBehaviour
                         Instantiate(Go[1], Vec, Quaternion.identity);
                         singtonEmtion.GetInstance().setGrate();
                         singtonEmtion.GetInstance().DkeyTRUE();
+                        singtonEmtion.GetInstance().isDownReal();
                         Destroy(gameObject);
                     }
                     else if ((sw.ElapsedMilliseconds > distance * 1000 - 400 && sw.ElapsedMilliseconds < distance * 1000 - 250) || (sw.ElapsedMilliseconds > distance * 1000 + 250 && sw.ElapsedMilliseconds < distance * 1000 + 400))
@@ -68,17 +74,16 @@ public class preFabNodeD : MonoBehaviour
                         Instantiate(Go[2], Vec, Quaternion.identity);
                         singtonEmtion.GetInstance().setBad();
                         singtonEmtion.GetInstance().DkeyTRUE();
+                        singtonEmtion.GetInstance().isDownReal();
                         Destroy(gameObject);
                     }
                     singtonEmtion.GetInstance().downTRUE();
-                    if (Input.anyKey||!Input.GetKeyDown(KeyCode.Space))
-                    {
-                        yield break;
-                    }
+                singtonEmtion.GetInstance().isFall();
 
-                }
-            
-               
+            }
+           
+
+
 
             yield return null;
         }

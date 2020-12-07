@@ -22,18 +22,25 @@ public class singtonEmtion : MonoBehaviour
 
     public int missCount = 0;
 
+
+
+
     public void girl_idel()
     {
-        this.SetAnimation("idle", true, 0);
+       
+        skill.state.SetAnimation(0, "idle", true).TimeScale = 0.01f;
+
     }
     public void girl_shot_r()
     {
-        this.SetAnimation("shot_r", true, 0);
-
+     
+        skill.state.SetAnimation(0, "shot_r", true).TimeScale = 0.01f;
+   
     }
     public void girl_shot_l()
     {
-        this.SetAnimation("shot_l", true, 0);
+        skill.state.SetAnimation(0, "shot_l", true).TimeScale = 0.01f;
+
     }
 
     public int life = 30;
@@ -157,6 +164,7 @@ public class singtonEmtion : MonoBehaviour
 
     private string CurrentAnimation;//재생
 
+   
 
 
   
@@ -199,7 +207,7 @@ public class singtonEmtion : MonoBehaviour
             Instantiate(emiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
             isMiissingHand = false;
         }
-
+        /*
 
         if (isDown)
         {
@@ -244,14 +252,83 @@ public class singtonEmtion : MonoBehaviour
                         Instantiate(eGood, new Vector3(0, 2.5f, 0), Quaternion.identity);
                         break;
                 }
-                
+               
             }
+        
+
+        }
+        */
+    }
+
+    public void isDownReal()
+    {
+
+        if (!isAkey && !isSkey && !isDkey && !isJkey && !isKkey)
+        {
+        
+            //실패했을경우
+            combe = 0; //콤보 초기화
+            life -= 1;
+            mState = state.miss;
+            isDown = false;
+            loseLife = true;
+            Instantiate(Imiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
+            Instantiate(emiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
+
+
+        }
+        //더 조건 넣어야됨 .
+        else
+        {
+            combe++; //콤보 증가
+            isDown = false;
+
+            switch (mState)
+            {
+                case state.perfect:
+                    mScore += 100;
+                    Instantiate(IPerfect, new Vector3(0, 2.5f, 0), Quaternion.identity);
+                    Instantiate(ePerfect, new Vector3(0, 2.5f, 0), Quaternion.identity);
+                    break;
+
+                case state.grate:
+                    mScore += 75;
+                    Instantiate(IGreate, new Vector3(0, 2.5f, 0), Quaternion.identity);
+                    Instantiate(eGreate, new Vector3(0, 2.5f, 0), Quaternion.identity);
+                    break;
+
+                case state.good:
+                    mScore += 50;
+                    Instantiate(IGood, new Vector3(0, 2.5f, 0), Quaternion.identity);
+                    Instantiate(eGood, new Vector3(0, 2.5f, 0), Quaternion.identity);
+                    break;
+            }
+
+        }
+
+
+    }
+
+    public void isFall()
+    {
+        if (!isAkey && !isSkey && !isDkey && !isJkey && !isKkey)
+        {
+
+            //실패했을경우
+            combe = 0; //콤보 초기화
+            life -= 1;
+            mState = state.miss;
+            isDown = false;
+            loseLife = true;
+            Instantiate(Imiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
+            Instantiate(emiss, new Vector3(0, 2.5f, 0), Quaternion.identity);
 
 
         }
     }
-   
-     
+
+
+
     void SetAnimation(string name, bool loop, float speed)
     {
         if (name == cur_animation)

@@ -5,17 +5,17 @@ using UnityEngine;
 public class GrilAnimation : MonoBehaviour
 {
 
-    public GameObject G_RightPrticle;
-    public GameObject G_leftPrticle;
-
+  
+    public int coutNow;
 
     enum girlState
     {
         idel,
         shot_l,
+        idel2,
         shot_r
     }
-    bool isIdels=true;
+    bool isIdels = true;
     bool isidels2 = true;
 
 
@@ -23,31 +23,62 @@ public class GrilAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(GirAimatioMove());
+        coutNow = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (singtonEmtion.GetInstance().modleCount%4==1)
-        {
-            singtonEmtion.GetInstance().girl_idel();
-            isIdels = false;
-            isidels2 = false;
-        }
-       else if (singtonEmtion.GetInstance().modleCount%4 == 3)
-        {
-            singtonEmtion.GetInstance().girl_idel();
-            isIdels = false;
-            isidels2 = false;
-        }
-       
+
+
 
     }
     private void FixedUpdate()
     {
 
-   
+
     }
 
+
+    IEnumerator GirAimatioMove()
+    {
+        while (true)
+        {
+
+            if (coutNow != singtonEmtion.GetInstance().modleCount)
+            {
+
+                if (coutNow % 2 == 0)
+                {
+                   
+                    singtonEmtion.GetInstance().girl_shot_l();
+                    coutNow = singtonEmtion.GetInstance().modleCount;
+                    StartCoroutine(Courtineidel());
+                }
+                else if (coutNow % 2 == 1)
+                {
+
+                    singtonEmtion.GetInstance().girl_shot_r();
+                    coutNow = singtonEmtion.GetInstance().modleCount;
+                    StartCoroutine(Courtineidel());
+                }
+            }
+
+
+
+
+            yield return null;
+        }
+
+    }
+    IEnumerator Courtineidel()
+    {
+        
+        yield return new WaitForSecondsRealtime(0.1f);
+       
+        singtonEmtion.GetInstance().girl_idel();
+
+
+    }
 }
